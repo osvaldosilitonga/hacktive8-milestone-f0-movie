@@ -8,3 +8,43 @@ body {
 .navbar-nav > .active > a {
   color: red;
 }
+
+.darken-image {
+  filter: brightness(50%);
+}
+
+.hero {
+  height: 90vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("/assets/images/black-banner.png") no-repeat;
+}
+
+.hero-title {
+  font-size: 100px;
+  letter-spacing: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-subtitle {
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+  font-size: 25px;
+}
+
+section {
+  margin: 40px 35px;
+}
+
+.card-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(68, 14, 14, 0.9));
+}
+
+.card-title {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
