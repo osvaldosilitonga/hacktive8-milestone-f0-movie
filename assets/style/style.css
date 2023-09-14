@@ -53,6 +53,7 @@ section {
   margin: 65px 40px;
 }
 
+/* Footer */
 footer {
   padding: 50px 0;
   background-color: #221f1f;
@@ -61,9 +62,65 @@ footer {
 .footer-title {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
+}
+
+.footer-desc {
+  color: gray;
 }
 
 .footer-social {
   margin-top: 10px;
+}
+
+.bi-facebook:hover {
+  fill: #4267b2;
+  cursor: pointer;
+}
+
+.bi-twitter-x:hover {
+  fill: #1da1f2;
+  cursor: pointer;
+}
+
+.bi-instagram:hover {
+  fill: #e1306c;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-middle-title {
+  font-weight: bold;
+  color: red;
+  font-size: 19px;
+}
+
+.footer-menu {
+  list-style-type: none;
+}
+
+.footer-menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: gray;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-menu a:hover {
+  transform: translateX(5px);
+  color: white;
+}
+
+/* Copyright */
+.copyright {
+  padding: 13px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-color: #121111;
+  color: gray;
 }
