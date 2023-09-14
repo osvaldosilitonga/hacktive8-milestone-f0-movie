@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layar Kacang</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <script src="../assets//bootstrap/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <link rel="stylesheet" href="../assets/style/search.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top bg-body-tertiary px-3"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-4" href="#">
+          Layar<span style="color: red">Kacang</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="col navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center"
+            style="font-size: 17px"
+          >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li> -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- Sign In Button -->
+          <a href="/src/login.html">
+            <button class="btn btn-danger">Sign In</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header style="padding: 25px 35px 0 35px">
+      <div class="hstack justify-content-between">
+        <div class="right hstack gap-3" data-bs-theme="dark">
+          <!-- Kategori Select -->
+          <div class="kategori">
+            <select
+              id="kategori-select"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected>Kategori</option>
+              <option value="Action">Action</option>
+              <option value="Superhero">Superhero</option>
+              <option value="Horror">Horror</option>
+              <option value="Romance">Romance</option>
+            </select>
+          </div>
+
+          <!-- Rating Select -->
+          <div class="rating">
+            <select
+              id="rating-select"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected>Rating</option>
+              <option value="8-10">8 - 10</option>
+              <option value="6-8">6 - 8</option>
+              <option value="4-6">4 - 6</option>
+              <option value="less-then-4">Less then 4</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search" data-bs-theme="dark">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search. . ."
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+            <span class="input-group-text" id="basic-addon2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section - Lattest Movies -->
+    <section style="margin: 25px 45px 35px 45px">
+      <h1>Movies</h1>
+
+      <div class="movie-list">
+        <!-- Start Card -->
+        <div
+          class="card mb-3"
+          style="max-height: 230px; overflow: hidden"
+          data-bs-theme="dark"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="../assets/images/movies/bat-man.jpg"
+                class="card-image img-fluid rounded-start"
+                alt="batman"
+                style="
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: 0px -90px;
+                "
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Batman</h5>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <p class="card-text">
+                  Batman ventures into Gotham City's underworld when a sadistic
+                  killer leaves behind a trail of cryptic clues. As the evidence
+                  begins to lead closer to home and the scale of the
+                  perpetrator's plans become clear, he must forge new
+                  relationships, unmask the culprit and bring justice to the
+                  abuse of power and corruption that has long plagued the
+                  metropolis.
+                </p>
+                <div class="card-text hstack gap-4">
+                  <div class="rating hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="yellow"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <span class="rating-score">9.5</span>
+                  </div>
+                  <div class="length hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="red"
+                      class="bi bi-clock-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                    </svg>
+                    <span>120 mins</span>
+                  </div>
+                  <div class="fw-bold">HD</div>
+                  <div class="fw-bold">16+</div>
+                  <div class="kategori fw-bold text-warning">Superhero</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+        <!-- Start Card -->
+        <div
+          class="card mb-3"
+          style="max-height: 230px; overflow: hidden"
+          data-bs-theme="dark"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="../assets/images/movies/blood-shot.jpg"
+                class="card-image img-fluid rounded-start"
+                alt="bloodshot"
+                style="
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: 0px -90px;
+                "
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Bloodshot</h5>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <p class="card-text">
+                  After he and his wife are murdered, marine Ray Garrison is
+                  resurrected by a team of scientists. Enhanced with
+                  nanotechnology, he becomes a superhuman, biotech killing
+                  machine - Bloodshot. As Ray first trains with fellow
+                  super-soldiers, he cannot recall anything from his former
+                  life. But when his memories flood back and he remembers the
+                  man that killed both him and his wife, he breaks out of the
+                  facility to get revenge, only to discover that there's more to
+                  the conspiracy than he thought.
+                </p>
+                <div class="card-text hstack gap-4">
+                  <div class="rating hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="yellow"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <span class="rating-score">5.7</span>
+                  </div>
+                  <div class="length hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="red"
+                      class="bi bi-clock-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                    </svg>
+                    <span>120 mins</span>
+                  </div>
+                  <div class="fw-bold">HD</div>
+                  <div class="fw-bold">16+</div>
+                  <div class="kategori fw-bold text-warning">Action</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+        <!-- Start Card -->
+        <div
+          class="card mb-3"
+          style="max-height: 230px; overflow: hidden"
+          data-bs-theme="dark"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="../assets/images/movies/call.jpg"
+                class="card-image img-fluid rounded-start"
+                alt="call"
+                style="
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: 0px -90px;
+                "
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Call</h5>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <p class="card-text">
+                  Connected by phone in the same home but 20 years apart, a
+                  serial killer puts another woman's past -- and life -- on the
+                  line to change her own fate.
+                </p>
+                <div class="card-text hstack gap-4">
+                  <div class="rating hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="yellow"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <span class="rating-score">7.1</span>
+                  </div>
+                  <div class="length hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="red"
+                      class="bi bi-clock-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                    </svg>
+                    <span>120 mins</span>
+                  </div>
+                  <div class="fw-bold">HD</div>
+                  <div class="fw-bold">16+</div>
+                  <div class="kategori fw-bold text-warning">Horror</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+        <!-- Start Card -->
+        <div
+          class="card mb-3"
+          style="max-height: 230px; overflow: hidden"
+          data-bs-theme="dark"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="../assets/images/movies/captain-marvel.png"
+                class="card-image img-fluid rounded-start"
+                alt="captain marvel"
+                style="
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: 0px -90px;
+                "
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Captain Marvel</h5>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <p class="card-text">
+                  Captain Marvel is an extraterrestrial Kree warrior who finds
+                  herself caught in the middle of an intergalactic battle
+                  between her people and the Skrulls. Living on Earth in 1995,
+                  she keeps having recurring memories of another life as U.S.
+                  Air Force pilot Carol Danvers. With help from Nick Fury,
+                  Captain Marvel tries to uncover the secrets of her past while
+                  harnessing her special superpowers to end the war with the
+                  evil Skrulls.
+                </p>
+                <div class="card-text hstack gap-4">
+                  <div class="rating hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="yellow"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <span class="rating-score">6.8</span>
+                  </div>
+                  <div class="length hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="red"
+                      class="bi bi-clock-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                    </svg>
+                    <span>120 mins</span>
+                  </div>
+                  <div class="fw-bold">HD</div>
+                  <div class="fw-bold">16+</div>
+                  <div class="kategori fw-bold text-warning">Superhero</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+        <!-- Start Card -->
+        <div
+          class="card mb-3"
+          style="max-height: 230px; overflow: hidden"
+          data-bs-theme="dark"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="../assets/images/movies/end-game.jpg"
+                class="card-image img-fluid rounded-start"
+                alt="avengers"
+                style="
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: 0px -90px;
+                "
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Avengers : End Game</h5>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <p class="card-text">
+                  Adrift in space with no food or water, Tony Stark sends a
+                  message to Pepper Potts as his oxygen supply starts to
+                  dwindle. Meanwhile, the remaining Avengers -- Thor, Black
+                  Widow, Captain America and Bruce Banner -- must figure out a
+                  way to bring back their vanquished allies for an epic showdown
+                  with Thanos -- the evil demigod who decimated the planet and
+                  the universe.
+                </p>
+                <div class="card-text hstack gap-4">
+                  <div class="rating hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="yellow"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <span class="rating-score">8.4</span>
+                  </div>
+                  <div class="length hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="red"
+                      class="bi bi-clock-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                    </svg>
+                    <span>120 mins</span>
+                  </div>
+                  <div class="fw-bold">HD</div>
+                  <div class="fw-bold">16+</div>
+                  <div class="kategori fw-bold text-warning">Superhero</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+        <!-- Start Card -->
+        <div
+          class="card mb-3"
+          style="max-height: 230px; overflow: hidden"
+          data-bs-theme="dark"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="../assets/images/movies/hunter-killer.jpg"
+                class="card-image img-fluid rounded-start"
+                alt="hunter killer"
+                style="
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: 0px -90px;
+                "
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Hunter Killer</h5>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <p class="card-text">
+                  American submarine Captain Joe Glass is on the hunt for a U.S.
+                  sub in distress in the Arctic Ocean. He soon learns that a
+                  secret Russian coup is in the offing, a conspiracy that
+                  threatens to dismantle the world order. With crew and country
+                  on the line, Glass must assemble an elite group of Navy SEALs
+                  to sneak through enemy waters, rescue the kidnapped Russian
+                  president and prevent World War III.
+                </p>
+                <div class="card-text hstack gap-4">
+                  <div class="rating hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="yellow"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <span class="rating-score">6.6</span>
+                  </div>
+                  <div class="length hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="red"
+                      class="bi bi-clock-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                    </svg>
+                    <span>120 mins</span>
+                  </div>
+                  <div class="fw-bold">HD</div>
+                  <div class="fw-bold">16+</div>
+                  <div class="kategori fw-bold text-warning">Action</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+        <!-- Start Card -->
+        <div
+          class="card mb-3"
+          style="max-height: 230px; overflow: hidden"
+          data-bs-theme="dark"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="../assets/images/movies/insidious.jpg"
+                class="card-image img-fluid rounded-start"
+                alt="insidious"
+                style="
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: 0px -90px;
+                "
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Insidious</h5>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <p class="card-text">
+                  Soon after their showdown with evil spirits that possessed
+                  their son, the Lamberts, Renai (Rose Byrne) and Josh (Patrick
+                  Wilson), are ready for their lives to return to normal.
+                  However, something still is seriously off, especially with
+                  Josh, who -- unbeknown to Renai -- is possessed too. In order
+                  to free Josh's soul and finally defeat the malevolent forces
+                  around them, Lorraine Lambert (Barbara Hershey) and her
+                  ghost-hunting friends investigate the past to save her
+                  family's future.
+                </p>
+                <div class="card-text hstack gap-4">
+                  <div class="rating hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="yellow"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <span class="rating-score">6.8</span>
+                  </div>
+                  <div class="length hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="red"
+                      class="bi bi-clock-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                    </svg>
+                    <span>120 mins</span>
+                  </div>
+                  <div class="fw-bold">HD</div>
+                  <div class="fw-bold">16+</div>
+                  <div class="kategori fw-bold text-warning">Horror</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+        <!-- Start Card -->
+        <div
+          class="card mb-3"
+          style="max-height: 230px; overflow: hidden"
+          data-bs-theme="dark"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="../assets/images/movies/love-roise.jpg"
+                class="card-image img-fluid rounded-start"
+                alt="love roise"
+                style="
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: 0px -90px;
+                "
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Love Roise</h5>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <p class="card-text">
+                  Best friends Rosie and Alex are suddenly separated when Alex
+                  and his family move from Dublin to America. Can their
+                  friendship survive years and distance? Will they gamble
+                  everything for true love?
+                </p>
+                <div class="card-text hstack gap-4">
+                  <div class="rating hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="yellow"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <span class="rating-score">7.1</span>
+                  </div>
+                  <div class="length hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="red"
+                      class="bi bi-clock-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                    </svg>
+                    <span>120 mins</span>
+                  </div>
+                  <div class="fw-bold">HD</div>
+                  <div class="fw-bold">16+</div>
+                  <div class="kategori fw-bold text-warning">Romance</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+        <!-- Start Card -->
+        <div
+          class="card mb-3"
+          style="max-height: 230px; overflow: hidden"
+          data-bs-theme="dark"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="../assets/images/movies/resident-evil.jpg"
+                class="card-image img-fluid rounded-start"
+                alt="resident evil"
+                style="
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: 0px -90px;
+                "
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Resident Evil</h5>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <p class="card-text">
+                  The T-virus unleashed by the evil Umbrella Corp. has spread to
+                  every corner of the globe, infesting the planet with zombies,
+                  demons and monsters. Alice (Milla Jovovich), a former Umbrella
+                  employee turned rogue warrior, joins her friends on a
+                  last-chance mission to storm the company's headquarters
+                  located deep underneath what used to be Raccoon City. But the
+                  Red Queen (Ever Anderson) knows that Alice is coming, and the
+                  final battle will determine if the rest of mankind lives or
+                  dies.
+                </p>
+                <div class="card-text hstack gap-4">
+                  <div class="rating hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="yellow"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <span class="rating-score">5.5</span>
+                  </div>
+                  <div class="length hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="red"
+                      class="bi bi-clock-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                    </svg>
+                    <span>120 mins</span>
+                  </div>
+                  <div class="fw-bold">HD</div>
+                  <div class="fw-bold">16+</div>
+                  <div class="kategori fw-bold text-warning">Action</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+        <!-- Start Card -->
+        <div
+          class="card mb-3"
+          style="max-height: 230px; overflow: hidden"
+          data-bs-theme="dark"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="../assets/images/movies/theatre-dead.jpg"
+                class="card-image img-fluid rounded-start"
+                alt="theatre dead"
+                style="
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: 0px -90px;
+                "
+              />
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Theatre Dead</h5>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+                <p class="card-text">
+                  Locked away in their theatre, the cast and crew of "Angels In
+                  Hell" spend seemingly endless hours in rehearsal, unaware of
+                  the rapid and shocking changes taking place in the world
+                  outside. Now, trapped in the theatre by a horde of the living
+                  dead, with limited resources, they must decide between staying
+                  put and hoping for rescue, or taking matters into their own
+                  hands and making an extremely risky break for it.
+                </p>
+                <div class="card-text hstack gap-4">
+                  <div class="rating hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="yellow"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                    <span class="rating-score">5.7</span>
+                  </div>
+                  <div class="length hstack gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      fill="red"
+                      class="bi bi-clock-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                      />
+                    </svg>
+                    <span>120 mins</span>
+                  </div>
+                  <div class="fw-bold">HD</div>
+                  <div class="fw-bold">16+</div>
+                  <div class="kategori fw-bold text-warning">Horror</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer-title">
+              Layar<span style="color: red">Kacang</span>
+            </div>
+            <div class="footer-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+              officiis quas ea eveniet at itaque asperiores iusto magni
+              molestias expedita? Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit.
+            </div>
+            <div class="footer-social hstack gap-3">
+              <!--  -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="gray"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+              <!--  -->
+              <!--  -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="gray"
+                class="bi bi-twitter-x"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"
+                />
+              </svg>
+              <!--  -->
+              <!--  -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="gray"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+              </svg>
+              <!--  -->
+            </div>
+          </div>
+          <!-- Middle -->
+          <div class="col">
+            <div class="row">
+              <div class="col bowse">
+                <span class="footer-middle-title">Browse</span>
+                <ul class="footer-menu mt-1">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Pricing plans</a></li>
+                  <li><a href="#">Contacts</a></li>
+                  <li><a href="#">About Us</a></li>
+                </ul>
+              </div>
+              <div class="col help">
+                <span class="footer-middle-title">Help</span>
+                <ul class="footer-menu mt-1">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Pricing plans</a></li>
+                  <li><a href="#">Contacts</a></li>
+                  <li><a href="#">About Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Middle End -->
+          <!-- Right -->
+          <div class="col">
+            <div class="row">
+              <span class="footer-middle-title">Download App</span>
+            </div>
+            <div class="row">
+              <ul class="footer-menu mt-2 vstack gap-2">
+                <li>
+                  <a href="#">
+                    <img src="/assets/images/google-play.png" alt="playstore" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="/assets/images/app-store.png" alt="appstore" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Right End -->
+        </div>
+      </div>
+    </footer>
+    <div class="copyright d-flex justify-content-center">
+      Copyright &copy; 2023 - Layar<span style="color: #a31212">Kacang</span
+      >.com
+    </div>
+
+    <!-- Custom Script -->
+    <script src="../assets/script/search.js"></script>
+  </body>
+</html>
