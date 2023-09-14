@@ -78,21 +78,24 @@
       </div>
     </header>
 
-    <!-- Section -->
+    <!-- Section - Lattest Movies -->
     <section>
       <div class="section-header hstack justify-content-between mb-4">
-        <div class="section-title">LATTEST MOVIES</div>
+        <div class="section-title hstack gap-2">
+          <div class="vr" style="width: 5px; color: red; opacity: 1"></div>
+          <span>LATTEST MOVIES</span>
+        </div>
         <div class="carousel-button hstack gap-3">
           <button
             class="btn btn-danger"
-            data-bs-target="#carouselExample"
+            data-bs-target="#movies"
             data-bs-slide="prev"
           >
             <
           </button>
           <button
             class="btn btn-danger"
-            data-bs-target="#carouselExample"
+            data-bs-target="#movies"
             data-bs-slide="next"
           >
             >
@@ -100,12 +103,12 @@
         </div>
       </div>
       <!-- Carousel -->
-      <div id="carouselExample" class="carousel slide">
+      <div id="movies" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex gap-4">
               <!-- Start Card -->
-              <div class="card text-bg-dark" style="width: 20rem">
+              <div class="card text-bg-dark" style="width: 25rem">
                 <img
                   src="/assets/images/movies/bat-man.jpg"
                   class="card-img"
@@ -118,19 +121,24 @@
                   >
                     <span class="card-title fw-bold">Batman</span>
                     <div
-                      class="card-desc hstack gap-3 mt-4"
+                      class="card-desc hstack gap-3 mt-3"
                       style="font-size: 12px"
                     >
                       <div class="hstack gap-1">
                         <img
-                          src="/assets/images/star.png"
+                          src="/assets/images/svg/star-fill.svg"
                           alt="rating"
-                          style="width: 16px"
                         />
                         <span>9.5</span>
                       </div>
-                      <div>120 mins</div>
-                      <div>HD</div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
                       <div>16+</div>
                     </div>
                   </div>
@@ -138,32 +146,37 @@
               </div>
               <!-- End Card -->
               <!-- Start Card -->
-              <div class="card text-bg-dark" style="width: 20rem">
+              <div class="card text-bg-dark" style="width: 25rem">
                 <img
-                  src="/assets/images/movies/bat-man.jpg"
+                  src="/assets/images/movies/blood-shot.jpg"
                   class="card-img"
-                  alt="batman"
+                  alt="bloodshot"
                 />
                 <div class="card-img-overlay vstack justify-content-end p-0">
                   <div
                     class="card-background px-3 py-2"
                     style="letter-spacing: 1px"
                   >
-                    <span class="card-title fw-bold">Batman</span>
+                    <span class="card-title fw-bold">Bloodshot</span>
                     <div
-                      class="card-desc hstack gap-3 mt-4"
+                      class="card-desc hstack gap-3 mt-3"
                       style="font-size: 12px"
                     >
                       <div class="hstack gap-1">
                         <img
-                          src="/assets/images/star.png"
+                          src="/assets/images/svg/star-fill.svg"
                           alt="rating"
-                          style="width: 16px"
                         />
                         <span>9.5</span>
                       </div>
-                      <div>120 mins</div>
-                      <div>HD</div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
                       <div>16+</div>
                     </div>
                   </div>
@@ -171,32 +184,37 @@
               </div>
               <!-- End Card -->
               <!-- Start Card -->
-              <div class="card text-bg-dark" style="width: 20rem">
+              <div class="card text-bg-dark" style="width: 25rem">
                 <img
-                  src="/assets/images/movies/bat-man.jpg"
+                  src="/assets/images/movies/call.jpg"
                   class="card-img"
-                  alt="batman"
+                  alt="call"
                 />
                 <div class="card-img-overlay vstack justify-content-end p-0">
                   <div
                     class="card-background px-3 py-2"
                     style="letter-spacing: 1px"
                   >
-                    <span class="card-title fw-bold">Batman</span>
+                    <span class="card-title fw-bold">Call</span>
                     <div
-                      class="card-desc hstack gap-3 mt-4"
+                      class="card-desc hstack gap-3 mt-3"
                       style="font-size: 12px"
                     >
                       <div class="hstack gap-1">
                         <img
-                          src="/assets/images/star.png"
+                          src="/assets/images/svg/star-fill.svg"
                           alt="rating"
-                          style="width: 16px"
                         />
                         <span>9.5</span>
                       </div>
-                      <div>120 mins</div>
-                      <div>HD</div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
                       <div>16+</div>
                     </div>
                   </div>
@@ -204,65 +222,37 @@
               </div>
               <!-- End Card -->
               <!-- Start Card -->
-              <div class="card text-bg-dark" style="width: 20rem">
+              <div class="card text-bg-dark" style="width: 25rem">
                 <img
-                  src="/assets/images/movies/bat-man.jpg"
+                  src="/assets/images/movies/captain-marvel.png"
                   class="card-img"
-                  alt="batman"
+                  alt="captain marvel"
                 />
                 <div class="card-img-overlay vstack justify-content-end p-0">
                   <div
                     class="card-background px-3 py-2"
                     style="letter-spacing: 1px"
                   >
-                    <span class="card-title fw-bold">Batman</span>
+                    <span class="card-title fw-bold">Captain Marvel</span>
                     <div
-                      class="card-desc hstack gap-3 mt-4"
+                      class="card-desc hstack gap-3 mt-3"
                       style="font-size: 12px"
                     >
                       <div class="hstack gap-1">
                         <img
-                          src="/assets/images/star.png"
+                          src="/assets/images/svg/star-fill.svg"
                           alt="rating"
-                          style="width: 16px"
                         />
                         <span>9.5</span>
                       </div>
-                      <div>120 mins</div>
-                      <div>HD</div>
-                      <div>16+</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Card -->
-              <!-- Start Card -->
-              <div class="card text-bg-dark" style="width: 20rem">
-                <img
-                  src="/assets/images/movies/bat-man.jpg"
-                  class="card-img"
-                  alt="batman"
-                />
-                <div class="card-img-overlay vstack justify-content-end p-0">
-                  <div
-                    class="card-background px-3 py-2"
-                    style="letter-spacing: 1px"
-                  >
-                    <span class="card-title fw-bold">Batman</span>
-                    <div
-                      class="card-desc hstack gap-3 mt-4"
-                      style="font-size: 12px"
-                    >
                       <div class="hstack gap-1">
                         <img
-                          src="/assets/images/star.png"
-                          alt="rating"
-                          style="width: 16px"
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
                         />
-                        <span>9.5</span>
+                        <span> 120 mins </span>
                       </div>
-                      <div>120 mins</div>
-                      <div>HD</div>
+                      <div class="fw-bold">HD</div>
                       <div>16+</div>
                     </div>
                   </div>
@@ -274,32 +264,37 @@
           <div class="carousel-item">
             <div class="d-flex gap-4">
               <!-- Start Card -->
-              <div class="card text-bg-dark" style="width: 20rem">
+              <div class="card text-bg-dark" style="width: 25rem">
                 <img
-                  src="/assets/images/movies/bat-man.jpg"
+                  src="/assets/images/movies/end-game.jpg"
                   class="card-img"
-                  alt="batman"
+                  alt="avengers end game"
                 />
                 <div class="card-img-overlay vstack justify-content-end p-0">
                   <div
                     class="card-background px-3 py-2"
                     style="letter-spacing: 1px"
                   >
-                    <span class="card-title fw-bold">Batman</span>
+                    <span class="card-title fw-bold">Avengers</span>
                     <div
-                      class="card-desc hstack gap-3 mt-4"
+                      class="card-desc hstack gap-3 mt-3"
                       style="font-size: 12px"
                     >
                       <div class="hstack gap-1">
                         <img
-                          src="/assets/images/star.png"
+                          src="/assets/images/svg/star-fill.svg"
                           alt="rating"
-                          style="width: 16px"
                         />
                         <span>9.5</span>
                       </div>
-                      <div>120 mins</div>
-                      <div>HD</div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
                       <div>16+</div>
                     </div>
                   </div>
@@ -307,32 +302,37 @@
               </div>
               <!-- End Card -->
               <!-- Start Card -->
-              <div class="card text-bg-dark" style="width: 20rem">
+              <div class="card text-bg-dark" style="width: 25rem">
                 <img
-                  src="/assets/images/movies/bat-man.jpg"
+                  src="/assets/images/movies/hunter-killer.jpg"
                   class="card-img"
-                  alt="batman"
+                  alt="hunter killer"
                 />
                 <div class="card-img-overlay vstack justify-content-end p-0">
                   <div
                     class="card-background px-3 py-2"
                     style="letter-spacing: 1px"
                   >
-                    <span class="card-title fw-bold">Batman</span>
+                    <span class="card-title fw-bold">Hunter Killer</span>
                     <div
-                      class="card-desc hstack gap-3 mt-4"
+                      class="card-desc hstack gap-3 mt-3"
                       style="font-size: 12px"
                     >
                       <div class="hstack gap-1">
                         <img
-                          src="/assets/images/star.png"
+                          src="/assets/images/svg/star-fill.svg"
                           alt="rating"
-                          style="width: 16px"
                         />
                         <span>9.5</span>
                       </div>
-                      <div>120 mins</div>
-                      <div>HD</div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
                       <div>16+</div>
                     </div>
                   </div>
@@ -340,32 +340,37 @@
               </div>
               <!-- End Card -->
               <!-- Start Card -->
-              <div class="card text-bg-dark" style="width: 20rem">
+              <div class="card text-bg-dark" style="width: 25rem">
                 <img
-                  src="/assets/images/movies/bat-man.jpg"
+                  src="/assets/images/movies/insidious.jpg"
                   class="card-img"
-                  alt="batman"
+                  alt="insidious"
                 />
                 <div class="card-img-overlay vstack justify-content-end p-0">
                   <div
                     class="card-background px-3 py-2"
                     style="letter-spacing: 1px"
                   >
-                    <span class="card-title fw-bold">Batman</span>
+                    <span class="card-title fw-bold">Insidious</span>
                     <div
-                      class="card-desc hstack gap-3 mt-4"
+                      class="card-desc hstack gap-3 mt-3"
                       style="font-size: 12px"
                     >
                       <div class="hstack gap-1">
                         <img
-                          src="/assets/images/star.png"
+                          src="/assets/images/svg/star-fill.svg"
                           alt="rating"
-                          style="width: 16px"
                         />
                         <span>9.5</span>
                       </div>
-                      <div>120 mins</div>
-                      <div>HD</div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
                       <div>16+</div>
                     </div>
                   </div>
@@ -373,65 +378,37 @@
               </div>
               <!-- End Card -->
               <!-- Start Card -->
-              <div class="card text-bg-dark" style="width: 20rem">
+              <div class="card text-bg-dark" style="width: 25rem">
                 <img
-                  src="/assets/images/movies/bat-man.jpg"
+                  src="/assets/images/movies/love-roise.jpg"
                   class="card-img"
-                  alt="batman"
+                  alt="love roise"
                 />
                 <div class="card-img-overlay vstack justify-content-end p-0">
                   <div
                     class="card-background px-3 py-2"
                     style="letter-spacing: 1px"
                   >
-                    <span class="card-title fw-bold">Batman</span>
+                    <span class="card-title fw-bold">Love Roise</span>
                     <div
-                      class="card-desc hstack gap-3 mt-4"
+                      class="card-desc hstack gap-3 mt-3"
                       style="font-size: 12px"
                     >
                       <div class="hstack gap-1">
                         <img
-                          src="/assets/images/star.png"
+                          src="/assets/images/svg/star-fill.svg"
                           alt="rating"
-                          style="width: 16px"
                         />
                         <span>9.5</span>
                       </div>
-                      <div>120 mins</div>
-                      <div>HD</div>
-                      <div>16+</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Card -->
-              <!-- Start Card -->
-              <div class="card text-bg-dark" style="width: 20rem">
-                <img
-                  src="/assets/images/movies/bat-man.jpg"
-                  class="card-img"
-                  alt="batman"
-                />
-                <div class="card-img-overlay vstack justify-content-end p-0">
-                  <div
-                    class="card-background px-3 py-2"
-                    style="letter-spacing: 1px"
-                  >
-                    <span class="card-title fw-bold">Batman</span>
-                    <div
-                      class="card-desc hstack gap-3 mt-4"
-                      style="font-size: 12px"
-                    >
                       <div class="hstack gap-1">
                         <img
-                          src="/assets/images/star.png"
-                          alt="rating"
-                          style="width: 16px"
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
                         />
-                        <span>9.5</span>
+                        <span> 120 mins </span>
                       </div>
-                      <div>120 mins</div>
-                      <div>HD</div>
+                      <div class="fw-bold">HD</div>
                       <div>16+</div>
                     </div>
                   </div>
@@ -443,14 +420,713 @@
         </div>
       </div>
     </section>
+
+    <!-- Section - Lattest Series -->
     <section>
-      <h3>LATTEST SERIES</h3>
+      <div class="section-header hstack justify-content-between mb-4">
+        <div class="section-title hstack gap-2">
+          <div class="vr" style="width: 5px; color: red; opacity: 1"></div>
+          <span>LATTEST SERIES</span>
+        </div>
+        <div class="carousel-button hstack gap-3">
+          <button
+            class="btn btn-danger"
+            data-bs-target="#series"
+            data-bs-slide="prev"
+          >
+            <
+          </button>
+          <button
+            class="btn btn-danger"
+            data-bs-target="#series"
+            data-bs-slide="next"
+          >
+            >
+          </button>
+        </div>
+      </div>
+      <!-- Carousel -->
+      <div id="series" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex gap-4">
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/series/mandalorian.jpg"
+                  class="card-img"
+                  alt="mandalorian"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Mandalorian</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/series/penthouses.jpg"
+                  class="card-img"
+                  alt="penthouses"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Penthouses</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/series/star-trek.jpg"
+                  class="card-img"
+                  alt="star trek"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Star Trek</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/series/stranger-thing.jpg"
+                  class="card-img"
+                  alt="stranger thing"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Stranger Thing</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex gap-4">
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/series/supergirl.jpg"
+                  class="card-img"
+                  alt="supergirl"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Supergirl</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/series/the-falcon.webp"
+                  class="card-img"
+                  alt="the falcon"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">The Falcon</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/series/wanda.png"
+                  class="card-img"
+                  alt="wanda"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Wanda</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/series/stranger-thing.jpg"
+                  class="card-img"
+                  alt="stranger-thing"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Stranger Thing</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- Section - Lattest Anime -->
     <section>
-      <h3>LATTEST ANIME</h3>
+      <div class="section-header hstack justify-content-between mb-4">
+        <div class="section-title hstack gap-2">
+          <div class="vr" style="width: 5px; color: red; opacity: 1"></div>
+          <span>LATTEST ANIME</span>
+        </div>
+        <div class="carousel-button hstack gap-3">
+          <button
+            class="btn btn-danger"
+            data-bs-target="#anime"
+            data-bs-slide="prev"
+          >
+            <
+          </button>
+          <button
+            class="btn btn-danger"
+            data-bs-target="#anime"
+            data-bs-slide="next"
+          >
+            >
+          </button>
+        </div>
+      </div>
+      <!-- Carousel -->
+      <div id="anime" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex gap-4">
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/anime/coco.jpg"
+                  class="card-img"
+                  alt="coco"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Coco</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/anime/croods.jpg"
+                  class="card-img"
+                  alt="croods"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Croods</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/anime/demon-slayer.jpg"
+                  class="card-img"
+                  alt="demon slayer"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Demon Slayer</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/anime/dragon.jpg"
+                  class="card-img"
+                  alt="dragon"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Dragon</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex gap-4">
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/anime/over-the-moon.jpg"
+                  class="card-img"
+                  alt="over the moon"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Over The Moon</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/anime/weathering.jpg"
+                  class="card-img"
+                  alt="weathering"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Weathering</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/anime/your-name.jpg"
+                  class="card-img"
+                  alt="your name"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Your Name</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Start Card -->
+              <div class="card text-bg-dark" style="width: 25rem">
+                <img
+                  src="/assets/images/anime/croods.jpg"
+                  class="card-img"
+                  alt="croods"
+                />
+                <div class="card-img-overlay vstack justify-content-end p-0">
+                  <div
+                    class="card-background px-3 py-2"
+                    style="letter-spacing: 1px"
+                  >
+                    <span class="card-title fw-bold">Croods</span>
+                    <div
+                      class="card-desc hstack gap-3 mt-3"
+                      style="font-size: 12px"
+                    >
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/star-fill.svg"
+                          alt="rating"
+                        />
+                        <span>9.5</span>
+                      </div>
+                      <div class="hstack gap-1">
+                        <img
+                          src="/assets/images/svg/clock-fill.svg"
+                          alt="clock"
+                        />
+                        <span> 120 mins </span>
+                      </div>
+                      <div class="fw-bold">HD</div>
+                      <div>16+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer-title">
+              Layar<span style="color: red">Kacang</span>
+            </div>
+            <div class="footer-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+              officiis quas ea eveniet at itaque asperiores iusto magni
+              molestias expedita? Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit.
+            </div>
+            <div class="footer-social">fb twitter ig</div>
+          </div>
+          <div class="col">Middle</div>
+          <div class="col">Right</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

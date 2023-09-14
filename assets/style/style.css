@@ -14,7 +14,7 @@ body {
 }
 
 .hero {
-  height: 90vh;
+  height: 95vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
     url("/assets/images/black-banner.png") no-repeat;
@@ -47,4 +47,23 @@ section {
 .card-title {
   font-size: 35px;
   letter-spacing: 1px;
+}
+
+section {
+  margin: 65px 40px;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: #221f1f;
+}
+
+.footer-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer-social {
+  margin-top: 10px;
 }
